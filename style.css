@@ -57,7 +57,7 @@ h1, h2, h3 {
     font-weight: 900;
     font-size: 6.5vw;
 } h3 {
-    font-size: italic;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -89,8 +89,4 @@ label {
 input[type=submit] {
     height: 30px;
     margin-top: 10px;
-    /* box-shadow: inset 4px 4px #f2f5ff, inset -4px -4px #f2f5ff;
-    background: none;
-} input[type=submit]:hover{
-    background-color: #f2f5ff; */
 }
