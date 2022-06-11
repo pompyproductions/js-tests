@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+body {
+    background-color: #f2f5ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.column-left, .column-right {
+    height: 100vh;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+} .column-left {
+    background-color: #f5e960;
+} .column-right {
+    background-color: #f2f5ff;
+}
+
+
+header {
+    margin: 10px 2vw;
+}
+
+select, textarea, input {
+    background-color: #f2f5ff;
+    border: none;
+}
+
+h1, h2, h3, p, li, label, select, input, textarea {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    color: #090c02;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+} h1, h2 {
+    font-style: italic;
+    line-height: 1em;
+    text-align: justify;
+    margin-right: 12px;
+} h1 {
+    font-weight: 900;
+    font-size: 8vw;
+} h2 {
+    font-weight: 900;
+    font-size: 6.5vw;
+} h3 {
+    font-size: italic;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin: 10px 2vw 2vw;
+    flex: 1 1 auto;
+} 
+
+select {
+    width: 214px;
+    padding: 4px 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} 
+textarea {
+    padding: 16px;
+}
+
+label {
+    text-transform: uppercase;
+} #text-content {
+    flex: auto;
+} 
+
+input[type=submit] {
+    height: 30px;
+    margin-top: 10px;
+    /* box-shadow: inset 4px 4px #f2f5ff, inset -4px -4px #f2f5ff;
+    background: none;
+} input[type=submit]:hover{
+    background-color: #f2f5ff; */
+}
