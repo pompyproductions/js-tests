@@ -24,6 +24,8 @@ body {
     background-color: #f5e960;
 } .column-right {
     background-color: #f2f5ff;
+    padding: 2vw;
+    gap: 16px;
 }
 
 
@@ -40,9 +42,11 @@ h1, h2, h3, p, li, label, select, input, textarea {
     font-family: "Source Code Pro", monospace;
     font-weight: 400;
     color: #090c02;
+} textarea, select {
+    font-size: 14px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 } h1, h2 {
@@ -89,4 +93,15 @@ label {
 input[type=submit] {
     height: 30px;
     margin-top: 10px;
+}
+
+.purple {
+    color: #6610f2;
+}
+
+h1.smaller {
+    font-size: 36px;
+    text-align: left;
+} h2.smaller {
+    font-size: 32px;
 }
