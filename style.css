@@ -33,12 +33,26 @@ header {
     margin: 10px 2vw;
 }
 
-select, textarea, input {
+select, textarea, input, .form-button {
     background-color: #f2f5ff;
     border: none;
+    box-shadow: none;
 }
 
-h1, h2, h3, p, li, label, select, input, textarea {
+button {
+    border: none;
+    background: none;
+    box-shadow: inset 2px 2px #090c02, inset -2px -2px #090c02;
+    padding: 6px 0px;
+} button:hover {
+    box-shadow: inset 2px 2px #2E86AB, inset -2px -2px #2E86AB;
+} button:active {
+    box-shadow: none;
+    background-color:#2E86AB;
+    color: #f2f5ff;
+}
+
+h1, h2, h3, p, li, label, select, input, textarea, button {
     font-family: "Source Code Pro", monospace;
     font-weight: 400;
     color: #090c02;
@@ -90,13 +104,9 @@ label {
     flex: auto;
 } 
 
-input[type=submit] {
-    height: 30px;
-    margin-top: 10px;
-}
 
-.purple {
-    color: #6610f2;
+.colored {
+    color: #2E86AB;
 }
 
 h1.smaller {
@@ -104,4 +114,17 @@ h1.smaller {
     text-align: left;
 } h2.smaller {
     font-size: 32px;
+}
+
+.buttons {
+    display: flex;
+    gap: 24px;
+} .form-button {
+    height: 30px;
+    margin-top: 10px;
+    padding: inherit 20px;
+} #form-submit {
+    flex: 1 1 auto;
+} #remove-element {
+    flex: 0 0 90px;
 }

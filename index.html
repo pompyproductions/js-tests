@@ -21,7 +21,7 @@
             <h1>JAVASCRIPT</h1>
             <h2>TESTING PAGE</h2>
         </header>
-        <form action="#" name="element-creator" onsubmit="ciaoPompy" id="element-creator">
+        <form action="" name="element-creator" id="element-creator">
             <label for="tags-dropdown">The tag that you want to create:</label>
             <select name="tag" id="tags-dropdown">
                 <option value="h1">Heading-1</option>
@@ -31,7 +31,10 @@
             </select>
             <label for="text-content">The content:</label>
             <textarea type="text" name="text-content" id="text-content">I am a heading.</textarea>
-            <input type="submit" value="Create" id="form-submit">
+            <div class="buttons">
+                <button class="form-button" type="button" id="form-submit">Create Element</button>
+                <button class="form-button" type="button" id="remove-element">Erase</button>
+            </div>
         </form>
     </div>
 
